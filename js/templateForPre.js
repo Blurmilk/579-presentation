@@ -1,19 +1,19 @@
-// class ButtonGroup extends HTMLElement {
-//     constructor() {
-//       super();
-//       const template = document.getElementById('button-template');
-//       const shadowRoot = this.attachShadow({mode: 'open'});
-//       shadowRoot.appendChild(template.content.cloneNode(true));
-//       shadowRoot.querySelector('.share-btn').addEventListener('click', () => {
-//         console.log('Share button clicked');
-//       });
-//       shadowRoot.querySelector('.favorite-btn').addEventListener('click', () => {
-//         console.log('Favorite button clicked');
-//       });
-//     }
-//   }
+class ButtonGroup extends HTMLElement {
+    constructor() {
+      super();
+      const template = document.getElementById('button-template');
+      const shadowRoot = this.attachShadow({mode: 'open'});
+      shadowRoot.appendChild(template.content.cloneNode(true));
+      shadowRoot.querySelector('.share-btn').addEventListener('click', () => {
+        console.log('Share button clicked');
+      });
+      shadowRoot.querySelector('.favorite-btn').addEventListener('click', () => {
+        console.log('Favorite button clicked');
+      });
+    }
+  }
   
-// customElements.define('button-group', ButtonGroup);
+customElements.define('button-group', ButtonGroup);
 
 const catTemplate = document.getElementById('item-template');
 const catContainer = document.getElementById('container');
